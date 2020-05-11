@@ -32,7 +32,6 @@ function taoDoiTuongSanPham(hinhAnh, ten, giaGoc, phanTramGiamGia, khuVuc, id) {
     sanPham.fromJSONs = function (jsonDanhSachSanPham) {
         var danhSachSanPhamDayDu = new Array();
         var danhSachSanPham = JSON.parse(jsonDanhSachSanPham);
-
         for (var i=0; i<danhSachSanPham.length; i++) {
             var sanPham = danhSachSanPham[i];
             var sanPhamDayDu = taoDoiTuongSanPham(sanPham.hinhAnh, sanPham.ten, sanPham.giaGoc, sanPham.phanTramGiamGia, sanPham.khuVuc, sanPham.id);
